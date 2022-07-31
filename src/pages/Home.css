@@ -1,0 +1,10 @@
+.container {
+    align-items: center;
+}
+
+.roundImage {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+    margin-right: 90px;
+}
