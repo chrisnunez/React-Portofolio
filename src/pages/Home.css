@@ -8,3 +8,14 @@
     height: auto;
     margin-right: 90px;
 }
+
+.githubIcon {
+    padding-right: 70px;
+    margin: 0;
+    font-size: 90px;
+}
+
+.linkedinIcon {
+    margin: 0;
+    font-size: 90px;
+}

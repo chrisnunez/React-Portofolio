@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Navbartest() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className='fixed-top'>
       <Container>
         <Navbar.Brand href="/home">CN</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
