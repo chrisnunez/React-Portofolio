@@ -1,3 +1,21 @@
 .contact {
     margin-top: 250px;
 }
+
+@media (max-width: 350px) {
+    .parent {
+        position: absolute;
+        text-align: center;
+    }
+
+    .child {
+        position: relative;
+        
+    }
+  }
+
+  /* @media (max-width: 480px) {
+    .icons {
+      text-align: center;
+    }
+  } */
