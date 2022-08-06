@@ -11,26 +11,26 @@ class Home extends Component {
           <div className="imageContainer">
             <img className="roundImage shadow-lg" src={chris} />
           </div>
-          <div className="home-text text-wrap" as="p" animation="glow">
-            <h1 className="display-1 fw-bold" >Christian Nunez</h1>
+          <div className="home-text text-wrap" as="p" >
+            <h1 className="display-1 fw-bold">Christian Nunez</h1>
             <p style={{ fontSize: 25 }} className="text-muted">
               Full Stack Developer
             </p>
           </div>
         </div>
 
-        <div className='button github text-center mb-5'>
+        {/* <div className='button github text-center mb-5'>
             <a href="https://github.com/chrisnunez" className="text-decoration-none githubIcon"><i class= "fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/christian-nunez-04491818b/" className="linkedinIcon"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+          </div> */}
 
 
         <section className="about text-center" id="about">
     <div className="container py-4">
       <div className="row justify-content-center">
-        <div className="col-lg text-center w-20 bg-dark text-light pt-4 mb-5">
+        <div className="col-lg text-center w-25 pt-4 mb-5">
           <h2 className="text-center pb-3">About me</h2>
-          <p className="w-20">I'm a full stack coding developer from Los Angeles.  </p>
+          <p className="w-20">I'm a full stack coding developer from Los Angeles. </p>
           <div className="row p-1 ">
          
         </div>

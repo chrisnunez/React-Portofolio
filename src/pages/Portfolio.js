@@ -1,8 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/esm/Container';
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
 import '../Portfolio.css';
 
 // Import all images
@@ -27,8 +25,7 @@ function Portfolio() {
     const renderCard = (card, index) => {
         
          return (
-            <Container>
-            <Col className=''>
+            <Container className='col-auto one-card'>
                 <Card style={{ width: '18rem' }} key={index} className="shadow-lg m-2 text-center">
                     <Card.Img variant="top" src={card.image} />
                     <Card.Body>
@@ -36,14 +33,19 @@ function Portfolio() {
                          <Button variant="primary">{card.button}</Button>
                     </Card.Body>
                 </Card>
-             </Col>
+            
              </Container>
          )
     };
 
     return (
-        <div>
+       <div>
+        <div className='text-center'>
+            <h1 className='portfolio-title'>Portfolio</h1>
+        </div>
+        <div className=' container d-flex flex-wrap card-container'>
             {cardInfo.map(renderCard)}
+        </div>
         </div>
 
     );

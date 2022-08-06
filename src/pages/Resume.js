@@ -1,14 +1,15 @@
 import { Component } from "react";
 import './Resume.css'
+import Pdf from '../assets/Resume-2022.pdf'
 
 class Resume extends Component {
     render() {
         return (
-            <div>
+            <div className="resumeContainer">
                 <div class="text-center resume">
-                    <h1>You can download my resume here.</h1>
-          <a href="./assets/Resume-2022.pdf" download="Christian_Nunez_Resume">
-        <button type="button" class="btn btn-dark mt-5 text-center">Download Resume</button>
+                    <h1>You can view and download my resume here.</h1>
+          <a href={Pdf} target="_blank" >
+        <button type="button" class="btn btn-dark mt-5 text-center">Resume</button>
          </a>
       </div>
             </div>

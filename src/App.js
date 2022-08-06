@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Home from "./pages/Home";
+import Footer from './Footer'
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     );
   }
