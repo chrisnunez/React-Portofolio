@@ -7,6 +7,7 @@ import Resume from "./pages/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes} from "react-router-dom";
 import { Component } from "react";
+import {HashRouter as Routes} from 'react-router-dom'
 
 class App extends Component {
 
