@@ -1,5 +1,6 @@
 .container {
     align-items: center;
+    
 }
 
 .roundImage {
@@ -7,6 +8,15 @@
     width: 300px;
     height: auto;
     margin-right: 90px;
+}
+
+.aboutMeContainer {
+    align-items: center;
+}
+.aboutMeChild {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .githubIcon {

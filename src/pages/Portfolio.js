@@ -14,12 +14,12 @@ import Portfolio6 from '../assets/portfolio-6.jpg';
 
 function Portfolio() {
     const cardInfo = [
-        { image: Portfolio1, title: "NurseExpress", button: "Live Demo" },
-        { image: Portfolio2, title: "Nifty", button: "Live Demo" },
-        { image: Portfolio3, title: "Weather Dashboard", button: "Live Demo" },
-        { image: Portfolio4, title: "Work Day Scheduler", button: "Live Demo" },
-        { image: Portfolio5, title: "Coding Quiz", button: "Live Demo" },
-        { image: Portfolio6, title: "E-commerce", button: "Live Demo" }
+        { image: Portfolio1, title: "NurseExpress", button: "Live Demo", anchor: "https://nurse-express-s.herokuapp.com/", github: "https://github.com/chrisnunez/NurseXpresss"},
+        { image: Portfolio2, title: "Nifty", button: "Live Demo", anchor: "https://chrisnunez.github.io/Project1/", github: "https://chrisnunez.github.io/Project1/"},
+        { image: Portfolio3, title: "Weather Dashboard", button: "Live Demo", anchor: "https://chrisnunez.github.io/WeatherDashboard/", github: "https://github.com/chrisnunez/WeatherDashboard"},
+        { image: Portfolio4, title: "Work Day Scheduler", button: "Live Demo", anchor: "https://chrisnunez.github.io/WorkDayScheduler/", github: "https://github.com/chrisnunez/WorkDayScheduler"},
+        { image: Portfolio5, title: "Coding Quiz", button: "Live Demo", anchor: "https://chrisnunez.github.io/Code-Quiz/", github: "https://github.com/chrisnunez/Code-Quiz"},
+        { image: Portfolio6, title: "E-commerce", button: "Live Demo", anchor: "https://github.com/chrisnunez/E-Commerce-Back-End", github: "https://github.com/chrisnunez/E-Commerce-Back-End"}
     ]
 
     const renderCard = (card, index) => {
@@ -27,13 +27,12 @@ function Portfolio() {
          return (
             <Container className='col-auto one-card'>
                 <Card style={{ width: '18rem' }} key={index} className="shadow-lg m-2 text-center">
-                    <Card.Img variant="top" src={card.image} />
+                    <a href={card.github}><Card.Img variant="top" src={card.image} /></a>
                     <Card.Body>
                         <Card.Title>{card.title}</Card.Title>
-                         <Button variant="primary">{card.button}</Button>
+                        <Button variant="primary"> <a className='text-light text-decoration-none' href={card.anchor}>{card.button}</a></Button>
                     </Card.Body>
                 </Card>
-            
              </Container>
          )
     };

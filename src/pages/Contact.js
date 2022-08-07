@@ -7,7 +7,7 @@ class Contact extends Component {
     render() {
         
         return (
-            <div className="contactContainer"> 
+            <div className="contactContainer col-auto"> 
                 <div className="text-center">
                     <h1 className="contact-title ">Contact</h1>
                 </div>
